@@ -1,0 +1,6 @@
+{
+  "name": "SwiftTrade",
+  "description": "SwiftTrade - Professional high-performance trading platform simulator with advanced charts and real-time execution.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

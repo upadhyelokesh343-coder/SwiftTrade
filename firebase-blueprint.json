@@ -1,0 +1,64 @@
+{
+  "collections": {
+    "users": {
+      "documents": {
+        "{userId}": {
+          "fields": {
+            "demoBalance": "number",
+            "realBalance": "number",
+            "activeAsset": "string",
+            "updatedAt": "timestamp"
+          }
+        }
+      }
+    },
+    "trades": {
+      "documents": {
+        "{tradeId}": {
+          "fields": {
+            "userId": "string",
+            "asset": "string",
+            "action": "string",
+            "entryPrice": "number",
+            "amount": "number",
+            "createdAt": "timestamp",
+            "expiryTime": "timestamp",
+            "status": "string",
+            "resultPrice": "number",
+            "profit": "number"
+          }
+        }
+      }
+    },
+    "notifications": {
+      "documents": {
+        "{notificationId}": {
+          "fields": {
+            "userId": "string",
+            "userEmail": "string",
+            "title": "string",
+            "message": "string",
+            "issue": "string",
+            "ticketId": "string",
+            "read": "boolean",
+            "createdAt": "timestamp"
+          }
+        }
+      }
+    },
+    "support_messages": {
+      "documents": {
+        "{messageId}": {
+          "fields": {
+            "userId": "string",
+            "userEmail": "string",
+            "issue": "string",
+            "message": "string",
+            "status": "string",
+            "timestamp": "timestamp"
+          }
+        }
+      }
+    }
+  }
+}
