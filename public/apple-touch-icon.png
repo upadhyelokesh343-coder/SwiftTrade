@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F1419" />
+      <stop offset="100%" stop-color="#1A232E" />
+    </linearGradient>
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563EB" />
+      <stop offset="100%" stop-color="#3B82F6" />
+    </linearGradient>
+    <linearGradient id="chartGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#10B981" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#10B981" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Rounded Squircle Background -->
+  <rect width="512" height="512" rx="110" fill="url(#bgGrad)" />
+  
+  <!-- Outer Glow Ring -->
+  <rect x="16" y="16" width="480" height="480" rx="94" fill="none" stroke="#2563EB" stroke-opacity="0.3" stroke-width="8" />
+
+  <!-- Candlesticks & Chart Path -->
+  <g transform="translate(64, 96)">
+    <!-- Candlestick 1 Red -->
+    <line x1="60" y1="120" x2="60" y2="280" stroke="#EF4444" stroke-width="4" stroke-linecap="round"/>
+    <rect x="48" y="160" width="24" height="80" rx="4" fill="#EF4444"/>
+
+    <!-- Candlestick 2 Green -->
+    <line x1="140" y1="80" x2="140" y2="240" stroke="#10B981" stroke-width="4" stroke-linecap="round"/>
+    <rect x="128" y="100" width="24" height="110" rx="4" fill="#10B981"/>
+
+    <!-- Candlestick 3 Green -->
+    <line x1="220" y1="40" x2="220" y2="200" stroke="#10B981" stroke-width="4" stroke-linecap="round"/>
+    <rect x="208" y="60" width="24" height="100" rx="4" fill="#10B981"/>
+
+    <!-- Bullish Area Trend Fill -->
+    <path d="M 40 280 L 120 200 L 200 120 L 320 40 L 320 320 L 40 320 Z" fill="url(#chartGrad)"/>
+
+    <!-- Upward Trend Arrow Line -->
+    <path d="M 40 280 L 120 200 L 200 130 L 320 40" fill="none" stroke="#10B981" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Pulse Node at peak -->
+    <circle cx="320" cy="40" r="14" fill="#10B981" />
+    <circle cx="320" cy="40" r="24" fill="none" stroke="#10B981" stroke-width="4" opacity="0.6" />
+  </g>
+
+  <!-- Brand Name Tag -->
+  <text x="256" y="440" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="38" fill="#FFFFFF" text-anchor="middle" letter-spacing="2">SWIFTTRADE</text>
+</svg>
