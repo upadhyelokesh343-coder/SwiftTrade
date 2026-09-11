@@ -1,0 +1,10 @@
+{
+  "projectId": "guru-trade-simulator",
+  "appId": "1:52149525067:web:dbf3e305c8c0f8e5cc8bce",
+  "apiKey": "AIzaSyBfeoM0gWksNQO1gyMYoTgboQS0gAvvieg",
+  "authDomain": "guru-trade-simulator.firebaseapp.com",
+  "firestoreDatabaseId": "(default)",
+  "storageBucket": "guru-trade-simulator.firebasestorage.app",
+  "messagingSenderId": "52149525067",
+  "measurementId": "G-C0NQH0F2LZ"
+}
